@@ -1,0 +1,8 @@
+- name: cicd-key copy
+  template:
+    src: templates/template-name.j2
+    dest: /path/to/destination
+
+- name: hostname verification
+  cmd: |
+    echo "hello world"

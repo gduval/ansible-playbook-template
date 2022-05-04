@@ -1,0 +1,15 @@
+[servers]
+10.0.0.1
+10.0.0.2
+10.0.0.3
+10.0.0.4
+
+
+# Connection settings
+[all:vars]
+ansible_connection='ssh'
+ansible_ssh_port='22'
+ansible_user='ubuntu'
+#ansible_ssh_pass=  # "sshpass" package is required for use "ansible_ssh_pass"
+ansible_ssh_private_key_file=~/path-to-key
+ansible_python_interpreter='/usr/bin/python3'  # is required for use python3

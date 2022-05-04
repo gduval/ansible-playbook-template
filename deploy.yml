@@ -1,0 +1,12 @@
+---
+
+- name: Deploy Runner
+  hosts: master
+  become: true
+  become_method: sudo
+  any_errors_fatal: true
+  gather_facts: true
+
+
+  pre_tasks:
+    - import_tasks: tasks/setup.yml
